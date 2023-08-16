@@ -1,5 +1,31 @@
 ﻿@{
-	ViewData["title"] = "Insere Cliente";
+    ViewData["Title"] = "Insere Cliente";
 }
 
-<h1>Inserir Clientes</h1>
+<h1>INSERIR CLIENTE</h1>
+
+
+<div class="row g-3">
+    <div class="col">
+        <label for="exampleFormControlInput1" class="form-label">Nome</label>
+        <input type="text" class="form-control" placeholder="Seu Nome" aria-label="Seu Nome">
+    </div>
+    <div class="col">
+        <label for="exampleFormControlInput1" class="form-label">Sobrenome</label>
+        <input type="text" class="form-control" placeholder="Seu Sobrenome" aria-label="Seu Sobrenome">
+    </div>
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email </label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Telefone</label>
+    <input type="tel" class="form-control"  placeholder=" (11) 1234-5678">
+</div>
+
+    <a asp-controller="Cliente" asp-action="Index" role="button" class="btn btn-primary">Enviar</a>
+    <a asp-controller="Cliente" asp-action="Index" role="button" class="btn btn-danger">Voltar</a>
+
+
+</>
